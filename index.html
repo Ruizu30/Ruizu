@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelance Community Manager | Ruizu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        @font-face {
+            font-family: 'Romantic Christmas';
+            src: url('Romantic Christmas.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        :root {
+            --bg: #050505;
+            --y2k-pink: #d45d9e;
+            --text-color: #e0e0e0;
+            --grain: url('https://grainy-gradients.vercel.app/noise.svg');
+            --nav-height: 70px;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+        
+        body { 
+            font-family: 'Space Grotesk', sans-serif; 
+            background-color: var(--bg); 
+            background-image: var(--grain), linear-gradient(to bottom, #000, #1a0b1a, #3b1c5a);
+            background-attachment: fixed;
+            color: var(--text-color); 
+            line-height: 1.8; 
+            overflow-x: hidden;
+        }
+        
+        section { padding: 120px 15%; }
+        
+        h1, h2, h3, .price { 
+            font-family: 'Romantic Christmas', cursive; 
+            font-weight: normal;
+            text-transform: none;
+            color: var(--y2k-pink);
+        }
+        
+        h1 { 
+            font-size: 6rem; 
+            line-height: 1.1; 
+            margin-bottom: 30px;
+            filter: drop-shadow(0 0 10px rgba(212, 93, 158, 0.3));
+        }
+
+        h2 { 
+            font-size: 4rem; 
+            margin-bottom: 50px; 
+            position: relative; 
+            display: inline-block; 
+        }
+
+        h2::after { 
+            content:''; 
+            position: absolute; 
+            bottom: -10px; 
+            left: 0; 
+            width: 60px; 
+            height: 2px; 
+            background: var(--y2k-pink); 
+            box-shadow: 0 0 10px var(--y2k-pink); 
+        }
+
+        nav { 
+            display: flex; 
+            justify-content: space-between; 
+            padding: 0 10%; 
+            align-items: center; 
+            position: fixed; 
+            top: 0; 
+            width: 100%; 
+            height: var(--nav-height);
+            z-index: 1000;
+            background: rgba(5, 5, 5, 0.7); 
+            backdrop-filter: blur(20px); 
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+        
+        nav .logo img { 
+            height: 110px; 
+            width: auto;
+            transform: translateY(5px); 
+            filter: drop-shadow(0 4px 10px rgba(0,0,0,0.5)); 
+        }
+
+        nav .nav-links a { 
+            text-decoration: none; 
+            color: #fff; 
+            margin-left: 30px; 
+            font-size: 0.7rem; 
+            font-weight: 700; 
+            text-transform: uppercase; 
+            letter-spacing: 2px; 
+            transition: 0.3s;
+            opacity: 0.8;
+        }
+
+        nav .nav-links a:hover { 
+            opacity: 1;
+            color: var(--y2k-pink); 
+            text-shadow: 0 0 8px var(--y2k-pink); 
+        }
+
+        #home { 
+            min-height: 100vh; 
+            display: flex; 
+            align-items: center; 
+            padding-top: 100px; 
+        }
+        #home h1 { color: #fff; } 
+        #home em { 
+            color: var(--y2k-pink); 
+            font-size: 5.5rem; 
+            font-style: normal; 
+            display: block;
+        }
+        #home p { 
+            max-width: 500px; 
+            font-size: 1.1rem; 
+            border-left: 2px solid var(--y2k-pink); 
+            padding-left: 30px; 
+            opacity: 0.9; 
+        }
+
+        .grid-services { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+            gap: 40px; 
+        }
+        .service-card { 
+            background: rgba(255,255,255,0.03); 
+            padding: 50px; 
+            border: 1px solid rgba(255,255,255,0.1); 
+            backdrop-filter: blur(5px);
+            transition: 0.5s;
+        }
+        .service-card:hover { 
+            transform: translateY(-10px); 
+            border-color: var(--y2k-pink); 
+            background: rgba(212, 93, 158, 0.05); 
+        }
+        .service-card h3 { color: #fff; margin-bottom: 15px; font-size: 2.5rem; }
+        .price { font-size: 2.2rem; display: block; margin-bottom: 15px; }
+
+        .combo-section { 
+            margin-top: 100px; 
+            padding: 80px; 
+            background: rgba(255,255,255,0.05); 
+            border: 1px solid var(--y2k-pink); 
+            text-align: center;
+        }
+
+        .cta-button, button[type="submit"] { 
+            display: inline-block; 
+            margin-top: 40px; 
+            background: #fff; 
+            color: #000; 
+            padding: 15px 45px; 
+            text-decoration: none; 
+            font-size: 0.85rem; 
+            font-weight: 700; 
+            text-transform: uppercase; 
+            transition: 0.4s; 
+            border: none; 
+            cursor: pointer;
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        .cta-button:hover, button[type="submit"]:hover { 
+            background: var(--y2k-pink); 
+            color: #fff; 
+            box-shadow: 0 0 20px var(--y2k-pink); 
+        }
+
+        form { display: grid; gap: 20px; max-width: 600px; margin-top: 50px; }
+        input, textarea { 
+            border: none; 
+            border-bottom: 1px solid var(--y2k-pink); 
+            padding: 20px 0; 
+            background: transparent; 
+            color: var(--y2k-pink); 
+            font-size: 1rem;
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        input::placeholder, textarea::placeholder {
+            color: var(--y2k-pink);
+            opacity: 0.6;
+        }
+        input:focus, textarea:focus { outline: none; border-bottom-width: 2px; }
+        
+        footer { 
+            padding: 50px 10%; 
+            text-align: center; 
+            font-size: 0.8rem; 
+            color: var(--y2k-pink); 
+            border-top: 1px solid rgba(255,255,255,0.05); 
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 3.5rem; }
+            #home em { font-size: 3rem; }
+            section { padding: 80px 8%; }
+            nav .nav-links a { margin-left: 15px; font-size: 0.6rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo"><img src="logo.png" alt="Logo Ruizu"></div>
+        <div class="nav-links">
+            <a href="index.html">Accueil</a>
+            <a href="about.html">À propos</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <section id="home">
+        <div id="home-content" data-aos="fade-up">
+            <h1>Community Manager <br><em>Freelance</em></h1>
+            <p>J'accompagne les entreprises dans le développement de leur présence sociale pour attirer et engager leur communauté.</p>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2 data-aos="fade-right">Mes Services</h2>
+        <div class="grid-services">
+            <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                <span class="price">20€ / heure</span>
+                <h3>Prospection Locale</h3>
+                <p>Je contacte des prospects et développe des opportunités commerciales pour votre activité.</p>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                <span class="price">50€ / heure</span>
+                <h3>Création de Contenu</h3>
+                <p>Conception de visuels, posts et designs uniques adaptés à l'identité de votre marque.</p>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                <span class="price">20€ / heure</span>
+                <h3>Gestion de Réseaux</h3>
+                <p>Gestion complète : biographie, planning, stories et interactions avec votre audience.</p>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                <span class="price">150€</span>
+                <h3>Création de site web</h3>
+                <p>Conception et mise en ligne de votre site vitrine professionnel pour booster votre visibilité.</p>
+            </div>
+        </div>
+
+        <div class="combo-section" data-aos="zoom-in">
+            <span class="price">Sur Devis</span>
+            <h3>Pack Combo Sur-Mesure</h3>
+            <p>Besoin d'un mix de plusieurs services ? Créons ensemble une formule personnalisée.</p>
+            <a href="#contact" class="cta-button">Demander mon devis</a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 data-aos="fade-right">Travaillons ensemble</h2>
+        <form action="https://formspree.io/f/xpqywako" method="POST" data-aos="fade-up">
+            <input type="text" name="nom" placeholder="Nom complet" required>
+            <input type="email" name="email" placeholder="Votre Email" required>
+            <textarea name="message" rows="5" placeholder="Parlez-moi de votre projet..." required></textarea>
+            <button type="submit">Envoyer la demande</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 - Ruizu. Tous droits réservés.</p>
+        <div class="legal-links-container">
+            <a href="mentions-legales.html" class="legal-link">Mentions Légales</a>
+            <a href="cgv.html" class="legal-link">CGV</a>
+        </div>
+    </footer> 
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ duration: 1000, once: true });</script>
+</body>
+</html>

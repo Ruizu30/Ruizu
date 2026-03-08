@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditions Générales de Vente | Ruizu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        @font-face {
+            font-family: 'Romantic Christmas';
+            src: url('Romantic Christmas.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        :root {
+            --bg: #050505;
+            --y2k-pink: #d45d9e;
+            --text-color: #e0e0e0;
+            --grain: url('https://grainy-gradients.vercel.app/noise.svg');
+            --nav-height: 70px;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+        
+        body { 
+            font-family: 'Space Grotesk', sans-serif; 
+            background-color: var(--bg); 
+            background-image: var(--grain), linear-gradient(to bottom, #000, #1a0b1a, #3b1c5a);
+            background-attachment: fixed;
+            color: var(--text-color); 
+            line-height: 1.8; 
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        /* Navigation */
+        nav { 
+            display: flex; 
+            justify-content: space-between; 
+            padding: 0 10%; 
+            align-items: center; 
+            position: fixed; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: var(--nav-height);
+            z-index: 1000;
+            background: rgba(5, 5, 5, 0.7); 
+            backdrop-filter: blur(20px); 
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+
+        /* Style spécifique pour le logo PNG */
+        nav .logo img { 
+            height: 110px; /* Taille optimisée pour la barre de 70px */
+            width: auto;
+            display: block;
+            filter: drop-shadow(0 0 5px rgba(255,255,255,0.3));
+        }
+
+        nav a { 
+            text-decoration: none; 
+            color: #fff; 
+            font-size: 0.7rem; 
+            font-weight: 700; 
+            text-transform: uppercase; 
+            letter-spacing: 2px; 
+            transition: 0.3s;
+            opacity: 0.8;
+        }
+        nav a:hover { 
+            opacity: 1;
+            color: var(--y2k-pink); 
+            text-shadow: 0 0 8px var(--y2k-pink); 
+        }
+
+        /* Contenu Légal */
+        section { 
+            padding: 120px 15% 100px 15%; 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            margin-top: var(--nav-height);
+            background: rgba(255,255,255,0.02);
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255,255,255,0.05);
+            border-top: none;
+            border-bottom: none;
+        }
+        
+        .back-link { 
+            color: var(--y2k-pink); 
+            text-decoration: none; 
+            font-size: 0.8rem; 
+            text-transform: uppercase; 
+            letter-spacing: 2px; 
+            font-weight: 700; 
+            display: inline-block; 
+            margin-bottom: 40px; 
+            transition: 0.3s;
+        }
+        .back-link:hover {
+            text-shadow: 0 0 8px var(--y2k-pink);
+        }
+
+        h1 { 
+            font-family: 'Romantic Christmas', cursive; 
+            font-size: 4.5rem; 
+            color: var(--y2k-pink); 
+            margin-bottom: 60px; 
+            line-height: 1.1; 
+            filter: drop-shadow(0 0 10px rgba(212, 93, 158, 0.3));
+        }
+        
+        h2 { 
+            font-family: 'Romantic Christmas', cursive; 
+            font-size: 2.5rem; 
+            color: #fff; 
+            margin: 50px 0 20px 0; 
+            position: relative; 
+            display: inline-block;
+            font-weight: normal;
+        }
+        h2::after { 
+            content: ''; 
+            position: absolute; 
+            bottom: -5px; 
+            left: 0; 
+            width: 40px; 
+            height: 2px; 
+            background: var(--y2k-pink); 
+            box-shadow: 0 0 10px var(--y2k-pink);
+        }
+
+        p { 
+            margin-bottom: 20px; 
+            font-weight: 300; 
+            font-size: 1.05rem; 
+            opacity: 0.9;
+        }
+        
+        strong { 
+            font-weight: 700; 
+            color: #fff; 
+        }
+
+        ul { 
+            margin-bottom: 25px; 
+            list-style: none; 
+            padding-left: 0; 
+        }
+        ul li { 
+            margin-bottom: 10px; 
+            padding-left: 30px; 
+            position: relative; 
+            font-weight: 300; 
+            opacity: 0.9;
+        }
+        ul li::before { 
+            content: '✦'; 
+            position: absolute; 
+            left: 0; 
+            color: var(--y2k-pink); 
+            font-size: 0.9rem;
+            filter: drop-shadow(0 0 5px var(--y2k-pink));
+        }
+
+        a.contact-mail { 
+            color: var(--y2k-pink); 
+            font-weight: 700; 
+            text-decoration: none; 
+            border-bottom: 1px solid rgba(212, 93, 158, 0.3);
+            transition: 0.3s;
+        }
+        a.contact-mail:hover {
+            border-bottom-color: var(--y2k-pink);
+            text-shadow: 0 0 8px rgba(212, 93, 158, 0.5);
+        }
+
+        /* Footer */
+        footer { 
+            padding: 50px 10%; 
+            text-align: center; 
+            font-size: 0.8rem; 
+            color: var(--y2k-pink); 
+            border-top: 1px solid rgba(255,255,255,0.05); 
+        }
+
+        @media (max-width: 768px) {
+            section { padding: 80px 8%; margin-top: var(--nav-height); }
+            h1 { font-size: 3rem; }
+            h2 { font-size: 2rem; }
+            nav { padding: 0 8%; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src="logo.png" alt="Ruizu Logo">
+        </div>
+        <a href="index.html">Retour à l'accueil</a>
+    </nav>
+
+    <section data-aos="fade-up">
+        <a href="index.html" class="back-link">← Accueil</a>
+        
+        <h1>Conditions Générales <br>de Vente</h1>
+
+        <h2>1. Objet</h2>
+        <p>
+            Les présentes Conditions Générales de Vente régissent les services proposés par Ruizu, 
+            micro-entreprise de <strong>Louise Roemer</strong>, consistant en la gestion de comptes sur les réseaux sociaux 
+            (Instagram, Facebook, TikTok, LinkedIn, Twitter, etc.) pour les clients.
+        </p>
+
+        <h2>2. Prestations</h2>
+        <p>La prestation comprend notamment :</p>
+        <ul>
+            <li>Création et publication de contenus sur les comptes du client</li>
+            <li>Gestion des interactions (réponses aux messages et commentaires)</li>
+            <li>Analyse et suivi des statistiques et performances</li>
+        </ul>
+        <p>Tout service additionnel ou spécifique fera l’objet d’un accord séparé.</p>
+
+        <h2>3. Tarifs et paiement</h2>
+        <p>
+            Les tarifs sont précisés dans le devis ou sur le contrat accepté par le client.<br>
+            Le paiement se fait par virement bancaire ou Paypal.<br>
+            Le service est fourni tant que le client effectue les paiements convenus. 
+            En cas de non-paiement, Ruizu se réserve le droit de suspendre ou d’interrompre immédiatement la prestation.
+        </p>
+
+        <h2>4. Responsabilités</h2>
+        <p>
+            Ruizu s’engage à fournir ses services avec diligence mais n’est pas responsable des événements 
+            externes comme les changements de règles sur les plateformes, les suppressions de contenu 
+            par les réseaux sociaux ou les pertes d’accès aux comptes du client.
+        </p>
+
+        <h2>5. Propriété intellectuelle</h2>
+        <p>
+            Tous les contenus créés par Ruizu restent la propriété de l’éditeur sauf accord contraire. 
+            Le client ne peut reproduire ou diffuser ces contenus sans autorisation écrite.
+        </p>
+
+        <h2>6. Données personnelles</h2>
+        <p>
+            Les informations collectées dans le cadre de la prestation sont utilisées uniquement pour 
+            la gestion des comptes du client. Conformément au RGPD, le client peut demander l’accès, 
+            la modification ou la suppression de ses données personnelles en envoyant un email à : 
+            <a href="mailto:Ruizuneiru@gmail.com" class="contact-mail">Ruizuneiru@gmail.com</a>.
+        </p>
+
+        <h2>7. Loi applicable</h2>
+        <p>
+            Les présentes CGV sont régies par le droit français. Tout litige sera soumis aux tribunaux 
+            compétents du domicile de l’éditeur.
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 - Ruizu. Tous droits réservés.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+    </script>
+</body>
+</html>

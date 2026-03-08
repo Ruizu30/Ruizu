@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mentions Légales | Ruizu</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<style>
+@font-face {
+font-family: 'Romantic Christmas';
+src: url('Romantic Christmas.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+:root {
+--bg: #050505;
+--y2k-pink: #d45d9e;
+--text-color: #e0e0e0;
+--grain: url('https://grainy-gradients.vercel.app/noise.svg');
+--nav-height: 70px;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+
+body {
+font-family: 'Space Grotesk', sans-serif;
+background-color: var(--bg);
+background-image: var(--grain), linear-gradient(to bottom, #000, #1a0b1a, #3b1c5a);
+background-attachment: fixed;
+color: var(--text-color);
+line-height: 1.8;
+overflow-x: hidden;
+-webkit-font-smoothing: antialiased;
+}
+
+/* Navigation */
+nav {
+display: flex;
+justify-content: space-between;
+padding: 0 10%;
+align-items: center;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: var(--nav-height);
+z-index: 1000;
+background: rgba(5, 5, 5, 0.7);
+backdrop-filter: blur(20px);
+border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+nav .logo img {
+height: 110px; /* Ajuste la taille selon tes besoins */
+width: auto;
+display: block;
+filter: drop-shadow(0 0 5px rgba(255,255,255,0.3));
+}
+
+nav a {
+text-decoration: none;
+color: #fff;
+font-size: 0.7rem;
+font-weight: 700;
+text-transform: uppercase;
+letter-spacing: 2px;
+transition: 0.3s;
+opacity: 0.8;
+}
+
+nav a:hover {
+opacity: 1;
+color: var(--y2k-pink);
+text-shadow: 0 0 8px var(--y2k-pink);
+}
+
+/* Hero Header */
+.hero-legal {
+height: 40vh;
+display: flex;
+align-items: flex-end;
+padding: 0 15% 50px 15%;
+margin-top: var(--nav-height);
+}
+
+.hero-legal h1 {
+font-family: 'Space Grotesk', sans-serif;
+font-size: 4.5rem;
+line-height: 1.1;
+color: #fff;
+filter: drop-shadow(0 0 10px rgba(212, 93, 158, 0.3));
+}
+
+.hero-legal em {
+font-family: 'Romantic Christmas', cursive;
+color: var(--y2k-pink);
+font-style: normal;
+font-size: 5rem;
+}
+
+/* Contenu Texte */
+.legal-content {
+padding: 60px 15% 100px 15%;
+max-width: 1200px;
+background: rgba(255,255,255,0.02);
+backdrop-filter: blur(5px);
+border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+h2 {
+font-family: 'Romantic Christmas', cursive;
+font-size: 2.5rem;
+color: var(--y2k-pink);
+margin: 50px 0 20px 0;
+position: relative;
+display: inline-block;
+font-weight: normal;
+}
+
+h2::after {
+content: '';
+position: absolute;
+bottom: -5px;
+left: 0;
+width: 40px;
+height: 2px;
+background: var(--y2k-pink);
+box-shadow: 0 0 10px var(--y2k-pink);
+}
+
+p {
+margin-bottom: 20px;
+font-weight: 300;
+font-size: 1.05rem;
+opacity: 0.9;
+}
+
+strong {
+font-weight: 700;
+color: #fff;
+}
+
+a.link {
+color: var(--y2k-pink);
+font-weight: 700;
+text-decoration: none;
+border-bottom: 1px solid rgba(212, 93, 158, 0.3);
+transition: 0.3s;
+}
+
+a.link:hover {
+border-bottom-color: var(--y2k-pink);
+text-shadow: 0 0 8px rgba(212, 93, 158, 0.5);
+}
+
+footer {
+padding: 50px 10%;
+text-align: center;
+font-size: 0.8rem;
+color: var(--y2k-pink);
+border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+@media (max-width: 768px) {
+.hero-legal { height: 30vh; }
+.hero-legal h1 { font-size: 3rem; }
+.hero-legal em { font-size: 3.5rem; }
+.legal-content { padding: 40px 8%; }
+nav { padding: 0 8%; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+<div class="logo">
+    <img src="logo.png" alt="Ruizu Logo">
+</div>
+<a href="index.html">Retour à l'accueil</a>
+</nav>
+
+<header class="hero-legal">
+<div data-aos="fade-up">
+<h1>Mentions <br><em>Légales</em></h1>
+</div>
+</header>
+
+<section class="legal-content" data-aos="fade-up" data-aos-delay="200">
+<h2>Éditeur du site</h2>
+<p>
+<strong>Nom :</strong> Louise Roemer<br>
+<strong>Statut :</strong> Micro-entrepreneur (Entreprise Individuelle)<br>
+<strong>Nom commercial :</strong> Ruizu<br>
+<strong>Adresse :</strong> Durmenach, France<br>
+<strong>Email :</strong> <a href="mailto:Ruizuneiru@gmail.com" class="link">Ruizuneiru@gmail.com</a>
+</p>
+
+<h2>Identification de l'entreprise</h2>
+<p>
+<strong>Numéro SIRET :</strong> 93107683000021<br>
+Entreprise individuelle – Micro-entrepreneur
+</p>
+
+<h2>TVA</h2>
+<p>TVA non applicable, article 293B du CGI.</p>
+
+<h2>Hébergement</h2>
+<p>
+<strong>Hébergeur :</strong> GitHub Inc.<br>
+<strong>Adresse :</strong> 88 Colin P Kelly Jr St, San Francisco, CA 94107, États-Unis<br>
+<strong>Site web :</strong> <a href="https://github.com" target="_blank" class="link">www.github.com</a>
+</p>
+
+<h2>Propriété intellectuelle</h2>
+<p>
+L'ensemble des contenus présents sur ce site (textes, images, graphismes, logo)
+sont la propriété exclusive de l'éditeur sauf mention contraire. Toute
+reproduction ou utilisation sans autorisation préalable est strictement interdite.
+</p>
+
+<h2>Données personnelles</h2>
+<p>
+Les informations collectées sont utilisées uniquement pour les échanges avec les visiteurs.
+Conformément au RGPD, vous disposez d'un droit d'accès et de suppression de vos données via l'email ci-dessus.
+</p>
+</section>
+
+<footer>
+<p>&copy; 2025 - Ruizu. Tous droits réservés.</p>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init({ duration: 1000, once: true });</script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos | Ruizu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        @font-face { font-family: 'Romantic Christmas'; src: url('Romantic Christmas.ttf') format('truetype'); font-weight: normal; font-style: normal; }
+        :root { --bg: #050505; --y2k-pink: #d45d9e; --text-color: #e0e0e0; --grain: url('https://grainy-gradients.vercel.app/noise.svg'); --nav-height: 70px; }
+        * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+        body { font-family: 'Space Grotesk', sans-serif; background-color: var(--bg); background-image: var(--grain), linear-gradient(to bottom, #000, #1a0b1a, #3b1c5a); background-attachment: fixed; color: var(--text-color); line-height: 1.8; overflow-x: hidden; }
+        section { padding: 120px 15%; }
+        h2 { font-family: 'Romantic Christmas', cursive; font-size: 4rem; margin-bottom: 50px; position: relative; display: inline-block; color: var(--y2k-pink); }
+        h2::after { content:''; position: absolute; bottom: -10px; left: 0; width: 60px; height: 2px; background: var(--y2k-pink); box-shadow: 0 0 10px var(--y2k-pink); }
+        nav { display: flex; justify-content: space-between; padding: 0 10%; align-items: center; position: fixed; top: 0; width: 100%; height: var(--nav-height); z-index: 1000; background: rgba(5, 5, 5, 0.7); backdrop-filter: blur(20px); border-bottom: 1px solid rgba(255,255,255,0.05); }
+        nav .nav-links a { text-decoration: none; color: #fff; margin-left: 30px; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; transition: 0.3s; opacity: 0.8; }
+        nav .nav-links a:hover { opacity: 1; color: var(--y2k-pink); text-shadow: 0 0 8px var(--y2k-pink); }
+        .about-container { display: grid; grid-template-columns: 1fr 1.2fr; gap: 60px; align-items: start; margin-top: 50px; }
+        .about-image img { width: 100%; border: 1px solid var(--y2k-pink); transition: 0.5s; box-shadow: 20px 20px 0px rgba(212, 93, 158, 0.1); }
+        .about-text p { margin-bottom: 25px; font-size: 1.05rem; opacity: 0.9; }
+        .highlight { color: var(--y2k-pink); font-weight: 700; }
+        .cta-button { display: inline-block; background: #fff; color: #000; padding: 15px 45px; text-decoration: none; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; transition: 0.4s; }
+        .cta-button:hover { background: var(--y2k-pink); color: #fff; box-shadow: 0 0 20px var(--y2k-pink); }
+        footer { padding: 50px 10%; text-align: center; font-size: 0.8rem; color: var(--y2k-pink); border-top: 1px solid rgba(255,255,255,0.05); }
+        @media (max-width: 992px) { .about-container { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo"><img src="logo.png" alt="Logo Ruizu" style="height: 110px;"></div>
+        <div class="nav-links">
+            <a href="index.html">Accueil</a>
+            <a href="about.html">À propos</a>
+            <a href="index.html#services">Services</a>
+            <a href="index.html#contact">Contact</a>
+        </div>
+    </nav>
+    <section>
+        <h2 data-aos="fade-right">À propos de moi</h2>
+        <div class="about-container">
+            <div class="about-image" data-aos="zoom-in">
+                <img src="IMG_3154.jpg" alt="Ruizu">
+            </div>
+            <div class="about-text" data-aos="fade-left">
+                <p>Je suis <span class="highlight">community manager freelance</span> et j’aide les entreprises à gérer leurs réseaux sociaux avec sérieux… mais toujours avec une touche humaine et authentique. Mon objectif est simple : vous permettre de rester concentré sur votre activité pendant que je m’occupe de votre communication et des échanges avec votre communauté.</p>
+                <p>Aujourd’hui, les réseaux sociaux sont souvent le premier contact entre une entreprise et ses clients. Un message, une question, une demande de réservation… et tout se joue parfois en quelques minutes. Être réactif et créer une bonne première impression est devenu essentiel.</p>
+                <p>C’est là que j’interviens.</p>
+                <p>Je m’occupe de répondre aux messages privés, aux commentaires et aux demandes de vos clients ou prospects. Je peux également, selon vos besoins, publier du contenu, gérer certaines stories et assurer le suivi des demandes ou des réservations qui arrivent via vos réseaux sociaux.</p>
+                <p>J’aime particulièrement créer une communication <span class="highlight">simple, naturelle et agréable</span> entre les entreprises et leur communauté. Derrière chaque message, il y a une vraie personne, et pour moi c’est important que les échanges restent chaleureux et professionnels.</p>
+                <p>Dans mon travail, je privilégie trois choses : <span class="highlight">la réactivité, l’organisation et l’écoute</span>. Chaque entreprise a son identité et sa manière de communiquer, c’est pourquoi j’adapte toujours mon travail à votre univers et à votre clientèle.</p>
+                <p>Je travaille entièrement à distance, ce qui me permet d’accompagner différents professionnels avec flexibilité et efficacité.</p>
+                <p>Si vous cherchez quelqu’un de fiable, dynamique et à l’écoute pour gérer vos réseaux sociaux et prendre soin de votre communauté, je serai ravie de vous accompagner.</p>
+                <a href="index.html#contact" class="cta-button">Me contacter</a>
+            </div>
+        </div>
+    </section>
+    <footer><p>&copy; 2025 - Ruizu. Tous droits réservés.</p></footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ duration: 1000, once: true });</script>
+</body>
+</html>
