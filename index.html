@@ -203,6 +203,25 @@
             border-top: 1px solid rgba(255,255,255,0.05); 
         }
 
+        /* Nouveaux styles pour les liens de mentions légales et CGV */
+        .legal-links-container {
+            margin-top: 15px;
+        }
+
+        .legal-link {
+            color: var(--y2k-pink); /* Couleur rose définie dans vos variables */
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: 500;
+            transition: 0.3s;
+            opacity: 0.7; /* Légèrement transparent pour ne pas surcharger */
+        }
+
+        .legal-link:hover {
+            opacity: 1;
+            text-shadow: 0 0 5px var(--y2k-pink); /* Petit effet de lueur au survol */
+        }
+
         @media (max-width: 768px) {
             h1 { font-size: 3.5rem; }
             #home em { font-size: 3rem; }
